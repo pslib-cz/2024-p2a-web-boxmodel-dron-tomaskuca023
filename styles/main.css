@@ -26,8 +26,8 @@
         background-repeat: no-repeat;
         */
         background-image: url("../images/logo.svg");
-        width: 2em;
         height: 1em;
+		width: 2em;
         font-size: 1.5em;
     }
     .page__logo > span {
@@ -41,5 +41,40 @@
 		display: block;
 		width: 100%;
 	}   
-
+	.page__header {
+		background-image: url(../images/header-2560w.webp);
+		background-size: cover;
+		background-position: left bottom;
+	}
+	.page__logo-container {
+		text-align: center;
+		margin: 0 auto;
+	}
+	.page__logo {
+		display: inline-block;
+		padding: 1em;
+	}
+	.page__intro {
+		color: var(--light, white);
+		margin-left: 1em;
+		margin-bottom: 1em;
+	}
+	.button {
+		display: inline-block;
+		background-color: var(--primary, teal);
+		color: var(--light, white);
+		padding: 0.5em 1em;
+		border-radius: 0.5em;
+		font-weight: 700;
+		text-decoration: none;
+	}
+	.button--light {
+		background-color: var(--light, white);
+		color: var(--black, black);
+	}
+	.button:hover {
+		background-color: var(--black, black);
+		color: var(--light, white);
+		text-decoration: underline;
+	}
 }
