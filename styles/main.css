@@ -46,6 +46,9 @@
 		background-size: cover;
 		background-position: left top;
 	}
+	.page__section {
+		margin: 1em;
+	}
 	.page__logo-container {
 		text-align: center;
 		margin: 0 auto;
@@ -99,10 +102,35 @@
 	}
 	.outline-box {
 		border: 3px solid var(--primary, aqua);
-		padding: 1em;
-		margin: 1em, 0em;
+		margin: 1em;
+		padding-left: 1em;
+		padding-right: 1em;
 	}
-	.list > li::marker {
-		
+	.coupon-box {
+		padding: 1em;
+		background-color: var(--gray, gray);
+		text-align: center;
+		color: var(--light, white);
+	}
+
+	.page__footer {
+		padding: 2em;
+		text-align: center;
+		background-color: var(--gray, gray);
+	}
+	.footer-text {
+		text-decoration: none;
+		color: var(--light, white);
+	}
+	.gallery-image {
+		margin-top: .5em;
+		margin-bottom: .5em;
+		display: block;
+	}
+
+	@media (min-width: 768px) {
+		.gallery-image {
+			display: inline-block;
+		}
 	}
 }
